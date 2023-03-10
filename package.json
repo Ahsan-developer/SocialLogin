@@ -11,7 +11,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
     "react-social-login-buttons": "^3.6.1",
-    "reactjs-social-login": "^2.6.2"
+    "reactjs-social-login": "^2.6.2",
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
