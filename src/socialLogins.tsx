@@ -79,9 +79,9 @@ export function InstaLogin() {
   //   })
   //   .catch((error) => console.error(error));
 
-  // const onLoginStart = useCallback(() => {
-  //   alert("login start");
-  // }, []);
+  const onLoginStart = useCallback(() => {
+    alert("login start");
+  }, []);
 
   const onLogoutSuccess = useCallback(() => {
     setProfile(null);
