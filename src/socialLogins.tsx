@@ -12,7 +12,7 @@ import {
   TwitterLoginButton,
 } from "react-social-login-buttons";
 
-const REDIRECT_URI = "http://localhost:3001/";
+const REDIRECT_URI = "https://social-login-vkef.vercel.app/";
 
 export function FacebookLogin() {
   const [provider, setProvider] = useState("");
