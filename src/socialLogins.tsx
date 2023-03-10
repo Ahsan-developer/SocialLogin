@@ -81,6 +81,7 @@ export function InstaLogin() {
 
   const onLoginStart = useCallback(() => {
     alert("login start");
+    console.log("login start");
   }, []);
 
   const onLogoutSuccess = useCallback(() => {
