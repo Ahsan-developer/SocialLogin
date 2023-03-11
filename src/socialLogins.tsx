@@ -98,7 +98,7 @@ export function InstaLogin() {
         client_id={process.env.REACT_APP_INSTAGRAM_APP_ID || ""}
         client_secret={process.env.REACT_APP_INSTAGRAM_APP_SECRET || ""}
         redirect_uri={REDIRECT_URI}
-        scope="basic"
+        scope="user_profile,user_media"
         state="1"
         onLoginStart={onLoginStart}
         onLogoutSuccess={onLogoutSuccess}
