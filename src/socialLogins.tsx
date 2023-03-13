@@ -92,11 +92,22 @@ export function InstaLogin() {
 
   const onLogout = useCallback(() => {}, []);
 
+  function handleClick() {
+    fetch(`https://graph.instagram.com/v11.0/697931565407513/`)
+      .then((response) => response.json())
+      .then((data) => {
+        const posts = data.data;
+        console.log(posts, "post");
+        // Process the data and display it on your page
+      })
+      .catch((error) => console.error(error));
+  }
+
   return (
     <div>
       <LoginSocialInstagram
-        client_id={process.env.REACT_APP_INSTAGRAM_APP_ID || ""}
-        client_secret={process.env.REACT_APP_INSTAGRAM_APP_SECRET || ""}
+        client_id={"708082450813052" || ""}
+        client_secret={"0c0d6efd7e07e1317cf69396de33cf84" || ""}
         redirect_uri={REDIRECT_URI}
         scope="user_profile,user_media"
         state="1"
@@ -113,6 +124,7 @@ export function InstaLogin() {
       >
         <InstagramLoginButton />
       </LoginSocialInstagram>
+      {/* <button onClick={handleClick}>Instagram</button> */}
     </div>
   );
 }
